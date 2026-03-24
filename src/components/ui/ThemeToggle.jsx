@@ -16,16 +16,16 @@ const MoonIcon = () => (
   </svg>
 );
 
-const ThemeToggle = ({ isLight, onToggle }) => (
+const ThemeToggle = ({ isDark, onToggle }) => (
   <button
     onClick={onToggle}
-    title={isLight ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+    title={isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
     aria-label="Toggle theme"
     className="flex items-center justify-center w-[38px] h-[38px] bg-transparent
       border border-[var(--border)] text-cream-dim cursor-pointer flex-shrink-0
       transition-all duration-300 hover:border-gold hover:text-gold hover:bg-gold/5 hover:rotate-[20deg]"
   >
-    {isLight ? <MoonIcon /> : <SunIcon />}
+    {isDark ? <SunIcon /> : <MoonIcon />}
   </button>
 );
 

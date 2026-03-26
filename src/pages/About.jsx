@@ -24,7 +24,7 @@ const AboutImage = () => (
 const AboutContent = () => (
   <div>
     <p className="text-[0.9rem] sm:text-[0.95rem] leading-[1.8] sm:leading-[1.9] text-cream-dim mb-5">
-      Hi, I&apos;m Justin Valladolid, a 3rd year student at Computer Arts
+      Hi, I&apos;m Justin, a 3rd year student at Computer Arts
       Technological College and a web and mobile application developer.
       I&apos;m passionate about building modern, user-focused digital
       solutions that combine clean design with efficient functionality.

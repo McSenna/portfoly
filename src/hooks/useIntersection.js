@@ -1,11 +1,6 @@
 import { useState, useEffect } from 'react';
 
-/**
- * Returns true once the referenced element enters the viewport.
- * Stays true after the first intersection (one-shot reveal).
- * @param {React.RefObject} ref - Ref attached to the target element.
- * @param {IntersectionObserverInit} options - Optional observer options.
- */
+
 const useIntersection = (ref, options = {}) => {
   const [visible, setVisible] = useState(false);
 

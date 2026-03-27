@@ -5,7 +5,7 @@ import { NAV_LINKS } from '../../utils/data';
 import ThemeToggle from '../ui/ThemeToggle';
 import Hamburger from '../ui/Hamburger';
 
-const SECTION_IDS = ['hero', 'about', 'projects', 'experience', 'contact'];
+const SECTION_IDS = ['hero', 'about', 'projects', 'experience','certifications', 'contact'];
 
 const Navbar = ({ isLight, toggleTheme }) => {
   const scrolled = useScrolled();

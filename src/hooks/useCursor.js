@@ -48,7 +48,6 @@ const useCursor = () => {
     window.addEventListener('mousemove', onMove);
     animateRing();
 
-    // Attach after a brief delay to allow DOM to render
     const timer = setTimeout(attachHoverListeners, 500);
 
     return () => {

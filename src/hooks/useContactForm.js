@@ -2,9 +2,6 @@ import { useState } from 'react';
 
 const INITIAL_STATE = { name: '', email: '', message: '' };
 
-/**
- * Manages contact form state, validation, and submission.
- */
 const useContactForm = () => {
   const [fields, setFields] = useState(INITIAL_STATE);
   const [sent, setSent] = useState(false);
@@ -31,7 +28,6 @@ const useContactForm = () => {
     }
     setError('');
     setLoading(true);
-    // Simulate async send
     await new Promise((res) => setTimeout(res, 800));
     setLoading(false);
     setSent(true);

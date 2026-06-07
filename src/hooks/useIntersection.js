@@ -16,7 +16,7 @@ const useIntersection = (ref, options = {}) => {
 
     observer.observe(ref.current);
     return () => observer.disconnect();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); 
 
   return visible;
 };

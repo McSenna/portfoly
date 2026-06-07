@@ -63,10 +63,6 @@ class Particle {
   }
 }
 
-/**
- * Attaches and drives the gold particle canvas animation.
- * Must be called once; the canvas element must exist in the DOM.
- */
 const useParticleCanvas = () => {
   useEffect(() => {
     const canvas = document.getElementById('particle-canvas');

@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react';
 
-/**
- * Tracks which section is currently in view based on scroll position.
- * @param {string[]} sectionIds - Ordered list of section element IDs.
- * @returns {string} The ID of the currently active section.
- */
 const useActiveSection = (sectionIds) => {
   const [active, setActive] = useState(sectionIds[0] ?? '');
 

@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react';
 
-/**
- * Cycles through an array of strings with a typewriter + erase effect.
- * @param {string[]} strings - List of strings to cycle through.
- * @param {{ typeSpeed?: number, eraseSpeed?: number, pauseDuration?: number, initialDelay?: number }} options
- */
 const useTypewriter = (strings, options = {}) => {
   const {
     typeSpeed = 55,
@@ -16,13 +11,12 @@ const useTypewriter = (strings, options = {}) => {
   const [displayed, setDisplayed] = useState('');
   const [roleIdx, setRoleIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
-  const [phase, setPhase] = useState('wait'); // wait | type | pause | erase
+  const [phase, setPhase] = useState('wait'); 
 
-  // Initial wait before typing starts
   useEffect(() => {
     const timer = setTimeout(() => setPhase('type'), initialDelay);
     return () => clearTimeout(timer);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     const current = strings[roleIdx];
@@ -52,7 +46,7 @@ const useTypewriter = (strings, options = {}) => {
     }
 
     return () => clearTimeout(timer);
-  }, [phase, charIdx, roleIdx]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [phase, charIdx, roleIdx]); 
 
   return displayed;
 };

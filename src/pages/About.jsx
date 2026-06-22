@@ -11,7 +11,7 @@ const AboutImage = () => (
       before:content-[''] before:absolute before:inset-0
       before:bg-gradient-to-br before:from-gold/10 before:to-transparent before:z-[1]">
       <img
-        src="/pic1.jpg"
+        src="/pic2.jpg"
         alt="Justin Valladolid"
         className="w-full h-full object-cover object-top"
       />
